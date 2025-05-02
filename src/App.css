@@ -1,0 +1,70 @@
+.app {
+    position: relative;
+    height: 100vh;
+}
+body{
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+}
+
+.canvas-fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin: 0;
+    padding:0;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+    z-index: 2;
+}
+
+.left-column {
+    margin-left: 10px;
+}
+
+.middle-column {
+    display: flex;
+    justify-content: center;
+}
+
+.right-column {
+    margin-right: 10px;
+}
+
+.menu,
+.brush-menu {
+    position: absolute;
+    top: auto;
+    bottom: 100%; /* 将弹出框置于按钮上方 */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 3;
+    transform: translateY(-10px); /* 微调位置，避免与按钮重叠 */
+}
+
+.save-status {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 4;
+}    
